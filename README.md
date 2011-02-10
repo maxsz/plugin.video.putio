@@ -5,7 +5,7 @@ Enjoy put.io from your couch with XBMC :)
 
 Installation
 -------
-This plugin is hosted on https://github.com/maxsz/plugin.video.putio
+This plugin is hosted on [https://github.com/maxsz/plugin.video.putio](https://github.com/maxsz/plugin.video.putio)
 
 Three easy steps:
 
@@ -16,4 +16,4 @@ Three easy steps:
 Contributing
 ------------
 
-Want to contribute? Found a bug Great! Just drop me a line on http://github.com/maxsz.
+Want to contribute? Found a bug Great! Just drop me a line on [http://github.com/maxsz](http://github.com/maxsz).
