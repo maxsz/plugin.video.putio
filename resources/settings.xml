@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+  <category label="Login information">
+    <setting id="api_key" type="text" label="API Key" default="" />
+    <setting id="api_secret" type="text" option="hidden" label="API Secret" enable="!eq(-1,)" default="" />
+  </category>
+</settings>
