@@ -1,8 +1,8 @@
 <?xml version="1.0.1" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.putio"
        name="put.io"
-       version="0.0.1"
-       provider-name="maxsz">
+       version="0.0.2"
+       provider-name="Maximilian Szengel (maxsz)">
   <requires>
     <import addon="xbmc.python" version="1.0"/>
 		<import addon="script.module.simplejson" version="2.0.10"/>

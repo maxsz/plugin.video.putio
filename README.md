@@ -4,8 +4,10 @@ Put.io XBMC Plugin
 Enjoy put.io from your couch with XBMC :)
 
 Installation
--------
+------------
 This plugin is hosted on [https://github.com/maxsz/plugin.video.putio](https://github.com/maxsz/plugin.video.putio)
+
+You need to have script.module.simplejson installed. You can do this by installing this plugin from zip.
 
 Three easy steps:
 

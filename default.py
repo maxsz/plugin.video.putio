@@ -50,8 +50,8 @@ def listItems(id):
 			# 	xbmcplugin.addDirectoryItem(handle=handle, url=it.get_stream_url(), listitem=li, isFolder=False)
 
 		xbmcplugin.endOfDirectory(handle=handle, succeeded=True)
-	except PutioError:
-		showMessage("Put.io Communication Error", "Whoops, something went wrong while communicating with put.io", 15)
+	except putio.PutioError:
+		showMessage("Put.io Communication Error", "Whoops, something went wrong. Did you enter api-key/-secret corretly?", 15)
 
 # List items in dir with 'id'
 def show_directory(id):
