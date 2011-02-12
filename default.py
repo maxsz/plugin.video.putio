@@ -9,14 +9,14 @@ def showMessage(heading, message, duration):
 	xbmc.executebuiltin('XBMC.Notification("%s", "%s", %s)' % (heading, message, duration))
 
 # Startup
-api_key = putio_addon.getSetting("api_key")
-api_secret = putio_addon.getSetting("api_secret")
+api_key = putio_addon.getSetting("putio_api_key")
+api_secret = putio_addon.getSetting("putio_api_secret")
 
 while (api_key == "" and api_secret == ""):
 	showMessage("Put.io Login Error", "Please enter your credentials before using put.io plugin", 15)
 	putio_addon.openSettings()
-	api_key = putio_addon.getSetting("api_key")
-	api_secret = putio_addon.getSetting("api_secret")
+	api_key = putio_addon.getSetting("putio_api_key")
+	api_secret = putio_addon.getSetting("putio_api_secret")
 	
 api = putio.Api(api_key=api_key,api_secret=api_secret)
 
