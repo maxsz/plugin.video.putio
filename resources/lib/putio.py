@@ -1160,26 +1160,27 @@ class Item(BaseObj):
     
         
     
-    def get_stream_url(self):
-        """
-        Takes  : Nothing
-        Returns: A String
-        
-        Returns the stream url of files. If item is a folder, then download
-        url will be returned.
-        
-        """
-        
-        result = self.update_info()
-        
-        if result:
-            if self.is_dir == False:
-                sturl = str(self.stream_url) + "/atk/" \
-                        + self.api.access_token
-                return sturl
-            else:
-                return self.get_download_url()
-        else: raise PutioError("Error: Item not found.")
+	 def get_stream_url(self):
+	        """
+	        Takes  : Nothing
+	        Returns: A String
+
+	        Returns the stream url of files. If item is a folder, then download
+	        url will be returned.
+
+	        """
+
+	        result = self.update_info()
+
+	        if result:
+	            if self.is_dir == False:
+	                sturl = str(self.stream_url) + "/atk/+" \
+	                        + self.api.access_token + "/" + self.name
+			sturl = sturl.replace(' ', '.')
+	                return sturl
+	            else:
+	                return self.get_download_url()
+	        else: raise PutioError("Error: Item not found.")
     
     
     def create_mp4(self):
