@@ -3,6 +3,8 @@ Official XBMC plugin
 I stopped the development of this plugin in favor of the official
 [put.io XBMC plugin](https://github.com/tunix/xbmc.put.io).
 
+----------------------
+
 Put.io XBMC Plugin
 ==================
 
